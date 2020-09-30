@@ -1,1 +1,1 @@
-web: gunicorn yourFit.wsgi:application
+web: gunicorn yourFit.wsgi.application:application
