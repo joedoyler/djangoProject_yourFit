@@ -246,12 +246,16 @@ GitHub Pages was used to deploy the site. Upon selecting a name for the project,
 
 To deploy my project to Heroku the following steps were followed:
 
-* Go to the "settings" page in heroku app
-* To set up heroku config vars from Gitpod to Heroku, scroll down  and click on "Reveal Config Vars" section:
-* Type in "IP" to KEY and "0.0.0.0" to value 
-* Type in "PORT" to KEY and "5000" to value 
-* Type in "MONGO_URI" to KEY and "mongodb+srv://joeDoyler:<password>@myfirstcluster-y6kfn.mongodb.net/recipe_database?retryWrites=true&w=majority" to value 
-* Type in "SECRET_KEY" to KEY and "<secret_key>" to value 
+* Go to the "resources" page in heroku app.
+* Set up Postgres which in this case was the free version.
+* Ensure everything from requirements.txt file is downloaded.
+* Set up database with config variable in "settings" tab on Heroku
+* Remigrate apps and load json files with product and category data  
+* In terminal on Gitpod, log in to Heroku via "heroku login -i" command
+* type in "heroku config:set DISABLE_COLLECTSTATIC=1 --app "application name from Heroku here"
+* Finally:
+       heroku git:remote -a app-name-here
+       git push heroku master 
 
 
 # Hosting
@@ -259,8 +263,6 @@ To deploy my project to Heroku the following steps were followed:
 ## Heroku 
 
 Heroku has been chosen to host the app for this project.
-
-
 
 ## GitHub repository link
 
