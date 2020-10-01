@@ -90,8 +90,6 @@ As a general user who is looking to get into a new fitness/nutrition programme, 
 ## Shopping bag
 Upon clicking on to the website the user can register their soon to be log in details and create their own unique username which is then stored on a database with a hash security protection on their password in order to protect their details. 
 
-No two users can have the same username making sure that each user is unique on the website.
-
 ## Profiles
 Once registered the user can come back to the web page time and time again and log back in using their registered details. The database indefinitely stores username and password meaning a user can come back to the store at any time and see their details. 
 
@@ -142,23 +140,25 @@ Having a page where members of the YourFIT website can display their progress/ t
  * HTML, CSS, python and javascript were the programming languages used in the coding of this project.
  * For scaling Bootstrap CDN was used to add a more responsive website
  * Django has been incorporated to handle all of the backend for the project
- * Gitpod used to deploy the project alongside Heroku
+ * Gitpod was used for the version control of the project
+ * Github pages used to deploy the project alongside Heroku
  * sqlite3 was used for the management of the database
  * Stripe - used for the payment system in the checkout stage of purchasing a product
- * materialise has been used for certain grid layouts and sidebars on the mobile version
  * Font Awesome used for icons displayed throughout the website pages
  * Pillow is being used for processing images on the website products
+ * AWS S3 is being used to house the static files and all of the images seen on the website
 
 # Mock Up Designs
 
 ## General structure to website and rescaling on a mobile device Ideas
 
-In the link below you will be brought to a folder consisting of two images. One shows the general outline of a rough design to how I want the website to look.
+In the link below you will be brought to a folder consisting of two images. One shows the general outline of a rough design to how I want the website to look
 
 The other is of how I want the mobile version to work taking inspiration from a previous project. It shows a demonstration of how I want the navbar to expand out when clicked. 
 
 https://drive.google.com/drive/folders/1PNapI7VY0qElQZmbSVo3I-s-yhwpEVPF?usp=sharing 
 
+In the end a simplified version of the mobile version went into the project by having the display menu be apart of the navbar at the top of the page. 
  
 # Testing 
 
@@ -174,7 +174,7 @@ All of the user purchase data is stored on the django database in the backend me
 
 ### visually see information on what is being offered on the site without having to click through multiple pages
 
-By scrolling down on the initial homepage you are greeted with a grid layout of content providing you details on what programmes are available on the site, what trainers you can work with and what activewear / clothing bundles are available for purchase 
+By scrolling down on the initial homepage you are greeted with a grid layout of content providing you details on what programmes are available on the site with links guiding you straight to the with the click of a button displaying "more info". 
 
 ### As a general user I want to navigate the website without fear of being confused
 
@@ -182,11 +182,12 @@ The simplistic nav bar layout ensures that you won't be caught out when trying t
 
 ### Complete a purchase of products that I have selected from the website
 
-Through the shopping cart feature that is seen on the website. When you select "add to bag" the product details you have selected get added to the kart with a tally of everything you have purchased. Then purchasing the products are as simple as checking out, entering your details and paying where Stripe will handle the rest confirming your order with details provided of the purchase. 
+Through the shopping bag feature that is seen on the website. When you select "add to bag" the product details you have selected get added to the kart with a tally of everything you have purchased. Then purchasing the products are as simple as checking out, entering your details and paying where Stripe will handle the rest confirming your order with details provided of the purchase. 
 
 ## Testing involved with Stripe purchases
 Find screenshot attached of the test runs I did when confirming the purchases had gone through on Stripe.
 
+https://drive.google.com/file/d/1d_tfKghjnaOFenULotbIRhFhhP7EM3IC/view?usp=sharing
 
 # Validators
 
@@ -209,9 +210,7 @@ Javascript validated using https://codebeautify.org/jsvalidate
 
 * Webhook continuously replying back with error message despite confirmation of order going through on Stripe
 
-* Admin profile page not generating
-
-* In hero section on index page. Buttons flash white when mouse hovering over them. Not particularly an issue just not visually please or desired.
+* In hero section on index page. Buttons flash white when mouse hovering over them. Text not properly displaying in general. Not particularly an issue just not visually pleasing or desired.
 
 * Product Management page is not set up.
 
@@ -247,13 +246,13 @@ To deploy my project to Heroku the following steps were followed:
 
 * Go to the "resources" page in heroku app.
 * Set up Postgres which in this case was the free version.
-* Ensure everything from requirements.txt file is downloaded.
+* Ensure everything from requirements.txt file is downloaded i.e. gunicorn
 * Set up database with config variable in "settings" tab on Heroku
 * Remigrate apps and load json files with product and category data  
 * In terminal on Gitpod, log in to Heroku via "heroku login -i" command
 * type in "heroku config:set DISABLE_COLLECTSTATIC=1 --app "application name from Heroku here"
 * Finally:
-       heroku git:remote -a app-name-here
+       heroku git:remote -a django-project-yourfit
        git push heroku master 
 
 
