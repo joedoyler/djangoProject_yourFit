@@ -41,7 +41,7 @@ No fitness journey is complete without a proper outfit to take on the world in. 
 # UX
 
 ## How To Navigate
-Everything else is displayed as a form, something universal to all users to ensure that people aren't confused. Additional button features are kept to a minimum so virtually anyone can navigate the website.
+Everything a user can possibly require to initially navigate through the store within two lines at the top of the page.
 
 ## Clicks To Create
 The nav bar at the top of each page ensures that there are a limited amount of clicks on each page to get the user to start looking for the products they hope to buy from the website. It ensures that the user won't be confused or side tracked clicking through multiple pages just to start the buying process.
@@ -79,7 +79,6 @@ As a general user who is looking to get into a new fitness/nutrition programme, 
  * See all available products for purchase in a way that I desire
  * Have quick access to my purchased goods in terms of seeing your purchase history on the site
  * visually see information on what is being offered on the site without having to click through multiple pages
- * be inspired by the website to take on my new fitness journey
  * Navigate the website without fear of being confused
  * Complete a purchase of products that I have selected from the website
 
@@ -93,22 +92,24 @@ Upon clicking on to the website the user can register their soon to be log in de
 
 No two users can have the same username making sure that each user is unique on the website.
 
-## Account Set Up
-Once registered the user can come back to the web page time and time again and log back in using their registered details. The database indefinitely stores username and password meaning a user can come back at any time and access their recipes and continue on creating them for years to come. 
+## Profiles
+Once registered the user can come back to the web page time and time again and log back in using their registered details. The database indefinitely stores username and password meaning a user can come back to the store at any time and see their details. 
+
+The profiles also store a list of all purchases made on the site meaning they will be able to see their purchase history as well.
 
 ## Products
-Users can create their own recipes via the Add Recipe page. Different sections of the form ensure that the user must enter details into a given section of the form to make sure no false/half empty recipes are flooded on to the website
+Readily available to purchase on the site are gym & nutrition programmes alongside appropriate activewear and merchandise to get a user started on their fitness journey.
 
 ## Features
-
-## Review Section
-The recipes page contains all newly created recipes and dispays them all on to one page for users to see. Each user is responsible for editing and deleting recipes and won't be able to effect anyone elses recipes bar their own. 
 
 ## Navigation bar + Search bar
 In the image link section of the the Add Recipe form the user can input an image link of their meal and will have it displayed on top of their recipe. This creates both a personal element and aids with visual information as to what exactly a user should expect the meal to look like.  
 
 ## Product Reorganisation
 Users can rearrange the products via the product dropdown menu to category, rating etc. 
+
+## Purchase history
+As stated above an interesting feature to the website is being able to see your purchase history right next to your profile information when you log in
 
 ## Webhook
 The webhook feature has been added to ensure that a purchase is confirmed with Stripe 
@@ -173,11 +174,7 @@ All of the user purchase data is stored on the django database in the backend me
 
 ### visually see information on what is being offered on the site without having to click through multiple pages
 
-By scrolling down on the initial homepage you are greeted with a grid layout of content providing you details on what programmes are available on the site, what trainers you can work with and what activewear / clothing bundles are available for purchase
-
-### be inspired by the website to take on my new fitness journey
-
-Again on the home page an inspirational video will start playing to motivate you to take on your fitness journey. 
+By scrolling down on the initial homepage you are greeted with a grid layout of content providing you details on what programmes are available on the site, what trainers you can work with and what activewear / clothing bundles are available for purchase 
 
 ### As a general user I want to navigate the website without fear of being confused
 
@@ -215,6 +212,8 @@ Javascript validated using https://codebeautify.org/jsvalidate
 * Admin profile page not generating
 
 * In hero section on index page. Buttons flash white when mouse hovering over them. Not particularly an issue just not visually please or desired.
+
+* Product Management page is not set up.
 
 
 # Version Control
@@ -263,6 +262,9 @@ To deploy my project to Heroku the following steps were followed:
 ## Heroku 
 
 Heroku has been chosen to host the app for this project.
+
+Running Link:
+https://django-project-yourfit.herokuapp.com/
 
 ## GitHub repository link
 
