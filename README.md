@@ -127,13 +127,13 @@ Upon researching for the general fitness / healthy living vibe some very distinc
 
 ## Emailing service
 
-As it stands the users profile page is a rather blank html page that simply displays the users username. 
-
-Given more time I would add it in that on the users profile page their is a section that displays the users recipes and not anyone elses. Currently the user will have to sive through all the other recipes to check on their own. 
+Given more time I would incorporate an emailing service through an API outlined in an earlier stage in the course
 
 ## Community chat page
 
-Having a page where members of the YourFIT website can display their progress/ thoughts and opionions on a timeline to improve on the community aspect to the app
+Having a page where members of the YourFIT website can display their progress/ thoughts and opionions on a timeline to improve on the community aspect to the app.
+
+Taking the same logic as the recipe website where users can post recipes to a directory for all to see I would have that feature only it would be a smaller form asking for a daily update of your experience with the site / exercise tips people want to share. 
 
 # Technologies Used
 
@@ -267,6 +267,7 @@ https://django-project-yourfit.herokuapp.com/
 
 ## GitHub repository link
 
+https://github.com/joedoyler/djangoProject_yourFit
 
 # Credits 
 
