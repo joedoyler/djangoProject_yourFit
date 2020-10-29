@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
 
-# Create your views here.
+# Views for bag that controls the shopping cart created here
 
 
 def view_bag(request):

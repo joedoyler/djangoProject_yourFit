@@ -1,3 +1,4 @@
+/* styling used for sizing of two sections in user profile and aesthetic */
 .order-history {
     max-height: 416px; /* height of profile form + submit button */
     overflow-y: auto;

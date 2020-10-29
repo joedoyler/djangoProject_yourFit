@@ -206,13 +206,11 @@ Javascript validated using https://codebeautify.org/jsvalidate
 
 # Known issues
 
-* On the programmes page the option to have sizes available to you is showing up where it shouldn't be. Solve would be to add it to the kdbb group in shell set up to not add the sizes to other categories. Didn't have enough time to do the edits. 
-
 * Webhook continuously replying back with error message despite confirmation of order going through on Stripe
 
 * In hero section on index page. Buttons flash white when mouse hovering over them. Text not properly displaying in general. Not particularly an issue just not visually pleasing or desired.
 
-* Product Management page is not set up.
+* Account registration issue detected. Temporary fix is to set ACCOUNT_EMAIL_VERIFICATION = 'none'. Unable to detect how email verification link is not showing up in the terminal, manual verification was only solution in django administration. Having no verification on site opens it up to unlimited dummy accounts and reduces security. Also potential for server take down by over running the site with new bot users.
 
 
 # Version Control

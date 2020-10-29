@@ -1,5 +1,4 @@
-
-
+/* styling for buttons seen on the home page below shop now section */ 
 button {
   cursor: pointer;
   background: #233EDE;
@@ -23,14 +22,11 @@ a:hover {
 }
 
 
-/* start: hero section styles */
+/* start: hero section styles seen on the home page */
 #hero {
   position: relative;
   padding: 0;
 }
-
-
-
 
 #hero-slider .hero-slide-item {
   position: relative;
@@ -58,6 +54,3 @@ a:hover {
   right: 0;
   margin: -100px auto 0;
 }
-
-/* end hero section styles */
-
